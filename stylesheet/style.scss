@@ -1,0 +1,96 @@
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);//將物體往那邊移動
+  width: 350px;
+  height: 525px;
+  background: #062145 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 40px #00000066;
+  border-radius: 20px;
+  
+
+  .result {
+    width: 350px;
+    height: 109px;
+    background-color: #041936;
+    border-radius: 20px 20px 0 0;
+    padding: 16px 16px 8px 16px;
+    box-sizing: border-box;
+
+    &-pass {
+      width: auto;
+      height: 19px;
+      text-align: right;
+      font: 16px Roboto;
+      letter-spacing: 0;
+      color: #00c4ff;
+      position: relative;
+      right: 4px;
+    }
+    &-number {
+      width: auto;
+      height: 66px;
+      text-align: right;
+      font: 56px Roboto;
+      letter-spacing: 0;
+      color: #ffffff;
+    }
+  }
+  .number {
+    width: 100%;
+    height: 416px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    user-select: none;
+
+    // background-color: white;
+    &-btn {
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 64px;
+      color: white;
+      margin: 8px 7px;
+      font-size: 24px;
+      transition: all .2s ease;
+      
+      &:active{
+        background: #44d2fd;
+      }
+      &-operator {
+        background-color: #041936;
+      }
+      &-bottom {
+        color: #00c4ff;
+      }
+      &-equal {
+        width: 155px;
+        height: 64px;
+        background: transparent linear-gradient(90deg, #00c4ff 0%, #6c00ff 100%);
+        border-radius: 16px;
+        padding-left: 25%;
+        box-sizing: border-box;
+
+      }
+    }
+  }
+  
+}
+
+
+.testNumber{
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+} .test{
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+} 
